@@ -63,55 +63,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   <jsp:directive.page buffer="32kb"
                       contentType="text/html; charset=UTF-8"
                       pageEncoding="UTF-8" />
-  <jsp:text>
-    <![CDATA[
-      <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">]]>
-  </jsp:text>
-
-  <!-- Automatic redirect to login security check of user
-          details specified below -->
-
-  <html>
-    <head>
-      <script type="text/javascript">
-        function autoSubmit() {
-          document.getElementById("loginform").submit();
-        }
-      </script>
-      <meta content="text/html; charset=UTF-8"
-            http-equiv="Content-Type" />
-    </head>
-    <body class="logonBody"
-          style="visibility: hidden;"
-          onload="autoSubmit()">
-      <form id="loginform"
-            name="loginform"
-            action="j_security_check"
-            method="post">
-        <input type="hidden"
-               name="j_username"
-               value="generalpublic" />
-        <input type="hidden"
-               name="j_password"
-               value="password" />
-        <input type="hidden"
-               name="user_type"
-               value="EXTERNAL" />
-      </form>
-    </body>
-  </html>
-</jsp:root>
-
-<?xml version="1.0" encoding="UTF-8"?>
-<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page"
-  xmlns:prefix="URI"
-  version="2.0">
-  <jsp:directive.page buffer="32kb"
-                      contentType="text/html; charset=UTF-8"
-                      pageEncoding="UTF-8" />
-  
-			
+  		
 
 <!-- Minified CSS and JS -->
 <link   rel="stylesheet" 
