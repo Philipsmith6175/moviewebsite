@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>PopCornTv</title>
+<title>Movie Website</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Movie_store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
@@ -54,17 +54,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			  <ul>
 				 <li><span class="simptip-position-bottom simptip-movable" data-tooltip="TV"><a href="browse.php?series"> </a> </span></li>
 				 <li><span class="simptip-position-bottom simptip-movable" data-tooltip="MOVIES"><a href="browse.php?movie"> </a></span></li>
-			 </ul>
-			</div>
-			<div class="col-sm-3 header_right">
-			   <ul class="header_right_box">
-				 <li><img width = "40" height = "40" src="images/newuser1.png" alt=""/></li>
-				 <li><p><a href="login.php">Login</a></p></li>
-				 <li class="last"><i class="edit"> </i></li>
-				 <div class="clearfix"> </div>
-			   </ul>
-			</div>
-			<div class="clearfix"> </div>
+
+			 <form action="action_page.php" method="post">
+  <div class="imgcontainer">
+    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
 	      </div>
 	      <div class="slider">
 	   <div class="callbacks_container">
