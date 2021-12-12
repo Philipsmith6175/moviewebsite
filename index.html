@@ -56,68 +56,93 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				 <li><span class="simptip-position-bottom simptip-movable" data-tooltip="TV"><a href="browse.php?series"> </a> </span></li>
 				 <li><span class="simptip-position-bottom simptip-movable" data-tooltip="MOVIES"><a href="browse.php?movie"> </a></span></li>
 
-			 <!DOCTYPE html>   
-<html>   
-<head>  
-<meta name="viewport" content="width=device-width, initial-scale=1">  
-<title> Login Page </title>  
-<style>   
-Body {  
-  font-family: Calibri, Helvetica, sans-serif;  
-  background-color: pink;  
-}  
-button {   
-       background-color: #4CAF50;   
-       width: 100%;  
-        color: orange;   
-        padding: 15px;   
-        margin: 10px 0px;   
-        border: none;   
-        cursor: pointer;   
-         }   
- form {   
-        border: 3px solid #f1f1f1;   
-    }   
- input[type=text], input[type=password] {   
-        width: 100%;   
-        margin: 8px 0;  
-        padding: 12px 20px;   
-        display: inline-block;   
-        border: 2px solid green;   
-        box-sizing: border-box;   
-    }  
- button:hover {   
-        opacity: 0.7;   
-    }   
-  .cancelbtn {   
-        width: auto;   
-        padding: 10px 18px;  
-        margin: 10px 5px;  
-    }   
-        
-     
- .container {   
-        padding: 25px;   
-        background-color: lightblue;  
-    }   
-</style>   
-</head>    
-<body>    
-    <center> <h1> Student Login Form </h1> </center>   
-    <form>  
-        <div class="container">   
-            <label>Username : </label>   
-            <input type="text" placeholder="Enter Username" name="username" required>  
-            <label>Password : </label>   
-            <input type="password" placeholder="Enter Password" name="password" required>  
-            <button type="submit">Login</button>   
-            <input type="checkbox" checked="checked"> Remember me   
-            <button type="button" class="cancelbtn"> Cancel</button>   
-            Forgot <a href="#"> password? </a>   
-        </div>   
-    </form>     
-</body>     
-</html>  
+<?xml version="1.0" encoding="UTF-8"?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page"
+  xmlns:prefix="URI"
+  version="2.0">
+  <jsp:directive.page buffer="32kb"
+                      contentType="text/html; charset=UTF-8"
+                      pageEncoding="UTF-8" />
+  <jsp:text>
+    <![CDATA[
+      <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">]]>
+  </jsp:text>
+
+  <!-- Automatic redirect to login security check of user
+          details specified below -->
+
+  <html>
+    <head>
+      <script type="text/javascript">
+        function autoSubmit() {
+          document.getElementById("loginform").submit();
+        }
+      </script>
+      <meta content="text/html; charset=UTF-8"
+            http-equiv="Content-Type" />
+    </head>
+    <body class="logonBody"
+          style="visibility: hidden;"
+          onload="autoSubmit()">
+      <form id="loginform"
+            name="loginform"
+            action="j_security_check"
+            method="post">
+        <input type="hidden"
+               name="j_username"
+               value="generalpublic" />
+        <input type="hidden"
+               name="j_password"
+               value="password" />
+        <input type="hidden"
+               name="user_type"
+               value="EXTERNAL" />
+      </form>
+    </body>
+  </html>
+</jsp:root>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page"
+  xmlns:prefix="URI"
+  version="2.0">
+  <jsp:directive.page buffer="32kb"
+                      contentType="text/html; charset=UTF-8"
+                      pageEncoding="UTF-8" />
+  <jsp:text>
+    <![CDATA[
+      <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">]]>
+  </jsp:text>
+  <html>
+    <head>
+      <script type="text/javascript">
+        function autoSubmit() {
+          document.getElementById("logout").submit();
+        }
+      </script>
+      <meta content="text/html; charset=UTF-8"
+            http-equiv="Content-Type" />
+    </head>
+    <body class="logoutBody"
+          style="visibility: hidden;"
+          onload="autoSubmit()">
+      <form id="logout"
+            name="logout"
+            action="servlet/ApplicationController"
+            method="post">
+        <input type="submit"
+               name="j_logout"
+               value="Log Out" />
+        <input type="hidden"
+               name="logoutExitPage"
+               value="redirect.jsp" />
+      </form>
+    </body>
+  </html>
+</jsp:root>
+			
 
 <!-- Minified CSS and JS -->
 <link   rel="stylesheet" 
