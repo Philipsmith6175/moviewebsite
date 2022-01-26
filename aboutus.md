@@ -65,7 +65,10 @@
 <a href="">Download Now FZmovie</a>
 
 
-   <div class="row"
+   
   <footer class="border-top mt-5 py-4 text-center text-muted small">
     <p>&copy; 2021 Game Site</p>
     </footer>
+
+<div class="button">
+<a href="movies.md">Next Page</a>
