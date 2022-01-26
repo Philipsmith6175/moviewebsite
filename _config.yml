@@ -1,6 +1,5 @@
-layout: page
+
 title= Movie Website
 description= Best Site for downloading Movies
-google_analytics: true
 theme: jekyll-theme-hacker 
-google_analytics: UA-214444597-1
+
