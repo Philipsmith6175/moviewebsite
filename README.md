@@ -255,7 +255,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
  </div>
 
 <div class="button">
-<a href="aboutus.html">Next Page</a>
+<a href="aboutus.md">Next Page</a>
 
 
 
