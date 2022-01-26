@@ -1,4 +1,9 @@
 
+<div class="button">
+<a href="movies.md">Next Page</a>
+
+</div>
+
 <img src="" width="400" height="400">
 <strong> </strong>
 <div class="button"> 
@@ -70,5 +75,3 @@
     <p>&copy; 2021 Game Site</p>
     </footer>
 
-<div class="button">
-<a href="movies.md">Next Page</a>
