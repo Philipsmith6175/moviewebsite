@@ -1,6 +1,5 @@
 title=Movie Website
 description=Best Site for downloading Movies
-show_downloads: false
 google_analytics: true
 theme: jekyll-theme-hacker 
 comments: true 
