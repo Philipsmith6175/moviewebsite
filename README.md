@@ -1,48 +1,3 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<title>Movie Website</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Movie_store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<!-- start plugins -->
-<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
-<script src="js/responsiveslides.min.js"></script>
-
-<!-- This stylesheet is for small changes -->
-<link href="css/small" rel = "stylesheet" type = "text/css">
-
-<script>
-    $(function () {
-      $("#slider").responsiveSlides({
-      	auto: true,
-      	nav: true,
-      	speed: 500,
-        namespace: "callbacks",
-        pager: true,
-      });
-    });
-</script>
-
-<!-- script for going to the description by clicking on movie's icon
--->
-
-<script type = "text/javascript" >
-        function getInfo(namepara)
-        {
-        	console.log("Just reached");
-            window.location="./single.php?movie=" +  namepara;
-            console.log("reached the description of = " + namepara);
-<div class="g_id_signout">Sign Out</div> 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
-        }
-</script>
-
-<!-- -->
 
 
 </head>
@@ -255,7 +210,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
  </div>
 
 <div class="button">
-<a href="about.md">Next Page</a>
+<a href="about.html">Next Page</a>
 
 
 
